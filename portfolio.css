@@ -1,0 +1,256 @@
+ :root{
+        --background-color: rgb(253, 214, 165);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      body{
+        font-family: 'poppins',sans-serif;
+        background-color: var(--background-color);
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav{
+         color: black;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 50px;
+         height: 80px;
+      }
+      .pj{
+        color: black;
+      }
+     .github, .git-link{
+      display:inline-block;
+      margin-right: 10px;
+      color: black;
+      font-weight: 400;
+     }
+     .linkedIn, .linkedIn-link{
+      display:inline-block;
+      margin-right: 10px;
+      color: black;
+      font-weight: 400;
+     }
+     .mail, .mail-link{
+      display:inline-block;
+      color: white;
+      background-color: black;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top:2px ;
+      padding-bottom:2px ;
+      font-weight: 400;
+      border-radius: 5px;
+     }
+     .jpg{
+      width: 350px;
+      border-radius: 50%;
+     }
+
+     .myself{
+      display: flex;
+      align-items: center;
+      justify-content: space-between ;
+      padding-right: 50px;
+      padding-left: 50px;
+      margin-top: 50px;
+      margin-bottom:100px;
+      gap: 40px;
+      
+     }
+     .h2{
+      font-size: 35px;
+     }
+     .p{
+      font-size: 25px;
+     }
+     .my-links{
+      font-size: 25px;
+     }
+     .link-skills{
+      --link-color:var(--background-color);
+      transition: .1s;
+     }
+     .link-skills:hover{
+      color:black;
+      border-color: black;
+     }
+     .link-testimony{
+      --link-color:var(--background-color);
+      transition: .1s;
+     }
+     .link-testimony:hover{
+      color:black;
+      border-color: black;
+     }
+     .link-contact{
+      --link-color:var(--background-color);
+      transition: .1s;
+     }
+     .link-contact:hover{
+      color:black;
+      border-color: black;
+     }
+     .s{
+      display: inline-block;
+      border: 2px solid;
+      margin-right: 10px;
+     }
+     .t{
+      display: inline-block;
+      border: 2px solid;
+      margin-right: 10px;
+     }
+     .c{
+      display: inline-block;
+      border: 2px solid;
+     }
+     .s, .t, .c{
+      margin-top: 20px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right: 10px;
+      padding-left: 10px;
+      transition: .1s;
+     }
+     .heading-2{
+      text-align: center;
+      font-size: 35px;
+     }
+     .skills{
+      padding: 0 50px;
+      margin-bottom: 100px;
+     }
+     .second-h2{
+        text-align: center;
+        font-size: 25px;
+     }
+     .skill-1img{
+      display:flex;
+      width: 42px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 200px;
+     
+     }
+     .skill-2img{
+      display: flex;
+      width: 30px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 200px;
+     }
+     .skill-3{
+      border-top: 2px;
+     }
+     .skill-3img{
+      display: flex;
+      width: 80px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 200px;
+      
+     }
+     .skill-4img{
+      display: flex;
+      width: 40px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 13px;
+     }
+     .skill-list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      vertical-align: top;
+      font-size: 20px;
+      border: 1.5px solid rgb(211, 211, 211);
+     }
+     .testimony-section{
+      padding: 0 50px;
+      margin-bottom: 100px;
+     }
+     .testimony-section h2{
+      font-size: 35px;
+      margin-bottom: 30px;
+     }
+     .testimony-section .testimony{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+     }
+     .testimony-section .testimony .person-details{
+       text-align: center;
+       flex: 2;
+     }
+     .testimony-section .testimony .content{
+      flex: 8;
+      font-size: 25px;
+     }
+     .testimony-section .testimony .person-details img{
+      width: 200px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+     }
+     .testimony-section .testimony .person-details p {
+      font-weight: 600;
+     }
+     .testimony-section .testimony .person-details p:last-child{
+      font-weight: normal;
+     }
+     .contact-section{
+      padding: 0 50px;
+      margin-bottom: 100px;
+     }
+     .contact-section h2{
+      font-size: 35px;
+     }
+     .contact-section .group{
+      display: flex;
+      gap: 50px;
+     }
+     .contact-section .group .text{
+      flex: 3;
+      margin-top: 20px;
+      font-size: 25px;
+     }
+     .contact-section .group form{
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+     }
+     .contact-section .group form input,
+     .contact-section .group form textarea{
+      font-family: 'poppins', sans-serif;
+      border: 2px solid; 
+      padding: 10px;
+      margin-bottom: 15px;
+     }
+     button{
+      font-size: 16px;
+      font-family: 'poppins', sans-serif;
+      color: #fff;
+      background-color: blue;
+      border: none;
+      height: 50px;
+      cursor: pointer;
+      transition: .1s;
+     }
+
+    .contact-section .group form button:hover{
+      filter:brightness(.9);
+    }

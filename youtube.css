@@ -1,0 +1,245 @@
+p{
+  margin:0;
+}  
+body{
+  margin: 0;
+  padding-top:80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
+} 
+.searchbox{
+  height: 36px;
+  flex: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width:0;
+ 
+}
+.searchbox::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  
+}
+
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(184, 179, 179);
+  z-index: 100;
+
+}
+.ls{
+align-items: center;
+display: flex;
+}
+.ms{
+flex:1;
+margin-left: 70px;
+margin-right: 34px;
+max-width: 500px;
+display:flex;
+align-items: center;
+}
+.rs{
+width:200px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 20px;
+flex-shrink: 0;
+}
+.icon-1{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+.icon-2{
+  height: 20px;
+}
+.button-1{
+  height: 39px;
+  width: 60px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  margin-left: -1px;;
+  margin-right: 10px;
+
+}
+.button-1,.button-2,.icon-5-container,.icon-6-container,.icon-7-container{
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.button-1 .tooltip,.button-2 .tooltip, .icon-5-container .tooltip, .icon-6-container .tooltip, .icon-7-container .tooltip{
+  font-family: Arial, Helvetica, sans-serif;
+  position:absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom:-30px;
+  opacity: 0;
+  transition: opacity 0.15;
+  pointer-events:none;
+  white-space: nowrap;
+}
+.button-1:hover .tooltip,.button-2:hover .tooltip, .icon-5-container:hover .tooltip, .icon-6-container:hover .tooltip, .icon-7-container:hover .tooltip{
+opacity: 1;
+}
+.button-2{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(246, 245, 245);
+}
+
+.icon-3{
+  height: 25px;
+
+}
+.icon-4{
+  height: 25px;
+}
+.icon-5{
+height: 24px;
+}
+.icon-6{
+  height: 24px;
+}
+.icon-7{
+  height: 24px;
+}
+.container{
+  position: relative;
+}
+.count{
+  position: absolute;
+  top:-2px;
+  right:-5px;
+  background-color: rgb(152, 8, 8);
+  color: white;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+
+}
+.icon-8{
+  height: 32px;
+  border-radius: 16px;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width:72px;
+  z-index:200;
+  padding-top:5px;
+}
+.sidebar-link{
+  height:74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor:pointer;
+}
+.sidebar-link:hover{
+  background-color: rgb(235, 235, 235);
+}
+.sidebar-link img{
+  height:24px;
+  margin-bottom: 4px;
+
+}
+.sidebar-link div{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+.thumbnail-row{
+  position:relative;
+
+}
+.thumbnail-1{
+  width: 100%;
+  margin-bottom: 8px;
+  margin-right: 20px;
+}
+.vedio-title{
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.vedio-stats,.vedio-author{
+  color: rgb(114, 113, 113);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.vedio-author{
+  margin-bottom: 4px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.channel-profile{
+  width:36px;
+  border-radius: 50px;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.maingrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+
+
+.vedio-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 25px;
+  right: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius:2px;
+}
